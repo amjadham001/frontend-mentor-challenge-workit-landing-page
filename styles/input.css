@@ -1,1 +1,199 @@
 @import "tailwindcss";
+
+@font-face {
+	font-family: "Fraunces";
+	src:
+		url("../assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf")
+			format("truetype-variations"),
+		url("../assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf")
+			format("truetype");
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Manrope";
+	src:
+		url("../assets/fonts/manrope/Manrope-VariableFont_wght.ttf")
+			format("truetype-variations"),
+		url("../assets/fonts/manrope/Manrope-VariableFont_wght.ttf")
+			format("truetype");
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@theme {
+	/* workit breakpoints */
+	--breakpoint-sm: 23.4375rem; /* 375px */
+	--breakpoint-xl: 90rem; /* 1440px */
+
+	/* workit fonts */
+	--font-fraunces: "Fraunces", serif;
+	--font-manrope: "Manrope", serif;
+
+	/* workit colors */
+	--color-workit-green: #44ffa1;
+	--color-workit-slate-900: #24053e;
+	--color-workit-slate-500: #584d62;
+	--color-workit-slate-100: #fcf8ff;
+	--color-workit-white: #ffffff;
+
+	/* workit counter */
+	--counter-name: workit-counter;
+}
+
+@layer components {
+	/* workit boxes */
+	.workit-container {
+		@apply px-5 md:px-11 xl:px-20;
+		@apply mx-auto max-w-93.75 md:max-w-192 xl:max-w-320;
+	}
+	.workit-grid {
+		@apply grid grid-cols-4 md:grid-cols-8 xl:grid-cols-12;
+		@apply gap-x-4 md:gap-x-6 xl:gap-x-8;
+	}
+
+	/* workit typo */
+	.workit-typo-1 {
+		@apply font-fraunces text-center text-[3rem] leading-[100%] font-semibold;
+
+		font-optical-sizing: auto;
+		font-variation-settings:
+			"opsz" 100,
+			"SOFT" 0,
+			"WONK" 1;
+
+		@variant md {
+			@apply text-[3.75rem];
+		}
+
+		@variant xl {
+			@apply text-[5rem];
+		}
+	}
+	.workit-typo-2 {
+		@apply font-fraunces text-[2rem] leading-[120%] font-semibold;
+
+		font-optical-sizing: auto;
+		font-variation-settings:
+			"opsz" 100,
+			"SOFT" 0,
+			"WONK" 1;
+
+		@variant md {
+			@apply text-[3rem];
+		}
+
+		@variant xl {
+			@apply text-[3.5rem];
+		}
+	}
+	.workit-typo-3 {
+		@apply font-fraunces text-[2rem] leading-[120%] font-semibold;
+
+		font-optical-sizing: auto;
+		font-variation-settings:
+			"opsz" 100,
+			"SOFT" 0,
+			"WONK" 1;
+
+		@variant md {
+			@apply text-[1.75rem];
+		}
+
+		@variant xl {
+			@apply text-[3.5rem];
+		}
+	}
+	.workit-typo-4 {
+		@apply font-manrope text-[1rem] leading-[180%] font-normal;
+
+		@variant xl {
+			@apply text-[1.125rem];
+		}
+	}
+	.workit-typo-5 {
+		@apply font-manrope text-[1.125rem] leading-[180%] font-bold;
+	}
+
+	/* workit logo */
+	.workit-logo {
+		@apply w-24;
+	}
+
+	/* workit btns */
+	.workit-btn {
+		@apply font-manrope text-[1.125rem] leading-[180%] font-bold;
+	}
+
+	.workit-btn--primary {
+		@apply bg-workit-green text-workit-slate-900 border-2 border-transparent px-8 py-3 transition;
+
+		@variant hover {
+			@apply text-workit-green bg-workit-white border-workit-green cursor-pointer;
+		}
+	}
+	.workit-btn--secondary {
+		@apply text-workit-white border-workit-green border-b-3 transition;
+
+		@variant hover {
+			@apply text-workit-green cursor-pointer;
+		}
+	}
+
+	/* workit icons */
+	.workit-icon {
+		@apply flex size-8 items-center justify-center transition;
+
+		svg {
+			@apply fill-workit-slate-500 transition;
+		}
+
+		@variant hover {
+			@apply bg-workit-slate-100 cursor-pointer;
+
+			svg {
+				@apply fill-workit-slate-900;
+			}
+		}
+	}
+
+	/* workit divider */
+	.workit-divider {
+		@apply h-6 md:h-14 xl:h-18;
+
+		svg {
+			@apply size-full;
+		}
+	}
+
+	.workit-divider--slate {
+		--fill-color: var(--color-workit-slate-100, #fcf8ff);
+
+		svg path {
+			@apply fill-(--fill-color);
+		}
+	}
+	.workit-divider--white {
+		--fill-color: var(--color-workit-white, #fff);
+
+		svg path {
+			@apply fill-(--fill-color);
+		}
+	}
+
+	/* workit counter */
+	.workit-marker {
+		--counter: var(--counter-name);
+
+		@apply border-workit-slate-500 font-fraunces text-workit-slate-900 flex size-12 items-center justify-center rounded-full border text-xl font-semibold;
+		@apply md:min-w-12 xl:size-14;
+
+		@variant before {
+			content: counter(var(--counter));
+			counter-increment: var(--counter);
+		}
+	}
+}

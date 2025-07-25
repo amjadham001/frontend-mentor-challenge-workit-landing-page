@@ -14,41 +14,276 @@
 
 		<title>Frontend Mentor | Workit landing page</title>
 	</head>
-	<body>
-		<h1 class="text-8xl">Hello World</h1>
-		<!-- Apply for access
+	<body class="font-manrope">
+		<div>
+			<header class="bg-workit-slate-900 md:overflow-hidden">
+				<div class="workit-container">
+					<div class="workit-grid md:relative">
+						<div class="col-span-full mb-14 pt-8 xl:pt-14">
+							<nav class="flex items-center justify-between">
+								<a href="#">
+									<img
+										class="workit-logo"
+										src="./assets/images/logo-light.svg"
+										alt="workit logo"
+									/>
+								</a>
 
-  Data tailored to your needs.
+								<button class="workit-btn workit-btn--secondary">
+									Apply for access
+								</button>
+							</nav>
+						</div>
 
-  Learn more
-  
-  1
+						<div class="col-span-full mb-36 xl:mb-74">
+							<section class="flex flex-col items-center gap-10">
+								<h1 class="text-workit-white workit-typo-1">
+									Data
+									<span
+										class="before:bg-workit-green relative before:absolute before:bottom-0.75 before:h-0.75 before:w-full"
+										>tailored</span
+									>
+									to <br />
+									your needs.
+								</h1>
 
-  Actionable insights
-  
-  Optimize your products, improve customer satisfaction and stay ahead of the competition 
-  with our product data analytics.
+								<button class="workit-btn workit-btn--primary">
+									Learn more
+								</button>
+							</section>
+						</div>
 
-  2
+						<img
+							class="hidden md:absolute md:top-[108.86px] md:left-0 md:block md:-translate-x-[calc(100%-36.97px)] md:-rotate-152 md:bg-gray-50/0 xl:top-[188.86px] xl:-translate-x-[calc(100%-43.97px)]"
+							src="./assets/images/bg-pattern-1.svg"
+							alt=""
+						/>
+						<img
+							class="hidden md:absolute md:right-0 md:bottom-[75.39px] md:block md:translate-x-[calc(100%-19.51px)] md:-rotate-56 md:bg-gray-50/0 xl:bottom-[210.39px] xl:translate-x-[calc(100%+48.49px)]"
+							src="./assets/images/bg-pattern-2.svg"
+							alt=""
+						/>
+					</div>
+				</div>
 
-  Data-driven decisions
+				<div class="workit-divider workit-divider--slate">
+					<svg
+						viewBox="0 0 375 24"
+						width="100%"
+						height="100%"
+						preserveAspectRatio="none"
+					>
+						<path
+							d="M0 0V24H375V0C375 0 282.021 22.6667 188.021 22.6667C94.0206 22.6667 0 0 0 0Z"
+						/>
+					</svg>
+				</div>
 
-  Make data-driven decisions with our product data analytics. Our AI-generated reports help 
-  you unlock insights hidden in your product data.
+				<div class="bg-workit-slate-100 relative h-20 md:h-34 xl:h-40.25">
+					<img
+						class="absolute bottom-0 left-1/2 h-46 -translate-x-1/2 md:h-74 xl:h-110.25"
+						src="./assets/images/image-hero.webp"
+						alt=""
+					/>
+				</div>
+			</header>
 
-  3
+			<main>
+				<section class="bg-workit-slate-100">
+					<div class="workit-container">
+						<div
+							class="workit-grid gap-y-8 py-16 [counter-reset:var(--counter-name)] md:pt-14 md:pb-11 xl:pt-22 xl:pb-36"
+							role="list"
+						>
+							<div
+								class="col-span-full flex flex-col items-center gap-6 md:gap-14 md:max-xl:flex-row xl:col-span-4"
+								role="listitem"
+							>
+								<div class="workit-marker"></div>
 
-  Always affordable
+								<div
+									class="space-y-4 text-center md:space-y-7 md:max-xl:text-left"
+								>
+									<h2 class="workit-typo-3 text-workit-slate-900">
+										Actionable insights
+									</h2>
 
-  Always affordable pricing that scales with your business. Get top-quality product data 
-  analytics services without hidden costs or unexpected fees.
+									<p class="text-workit-slate-900 workit-typo-4">
+										Optimize your products, improve customer satisfaction and
+										stay ahead of the competition with our product data
+										analytics.
+									</p>
+								</div>
+							</div>
 
-  Be the first to test
+							<div
+								class="col-span-full flex flex-col items-center gap-6 md:gap-14 md:max-xl:flex-row xl:col-span-4"
+								role="listitem"
+							>
+								<div class="workit-marker"></div>
 
-  Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a 
-  beta tester for our app and kickstart your company. Apply for access below and I’ll be 
-  in touch to schedule a call.
+								<div
+									class="space-y-4 text-center md:space-y-7 md:max-xl:text-left"
+								>
+									<h2 class="workit-typo-3 text-workit-slate-900">
+										Data-driven decisions
+									</h2>
 
-  Apply for access -->
+									<p class="text-workit-slate-900 workit-typo-4">
+										Make data-driven decisions with our product data analytics.
+										Our AI-generated reports help you unlock insights hidden in
+										your product data.
+									</p>
+								</div>
+							</div>
+
+							<div
+								class="col-span-full flex flex-col items-center gap-6 md:gap-14 md:max-xl:flex-row xl:col-span-4"
+								role="listitem"
+							>
+								<div class="workit-marker"></div>
+
+								<div
+									class="space-y-4 text-center md:space-y-7 md:max-xl:text-left"
+								>
+									<h2 class="workit-typo-3 text-workit-slate-900">
+										Always affordable
+									</h2>
+
+									<p class="text-workit-slate-900 workit-typo-4">
+										Always affordable pricing that scales with your business.
+										Get top-quality product data analytics services without
+										hidden costs or unexpected fees.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="workit-divider workit-divider--white">
+						<svg
+							viewBox="0 0 375 24"
+							width="100%"
+							height="100%"
+							preserveAspectRatio="none"
+						>
+							<path
+								d="M0 0V24H375V0C375 0 282.021 22.6667 188.021 22.6667C94.0206 22.6667 0 0 0 0Z"
+							/>
+						</svg>
+					</div>
+				</section>
+
+				<section>
+					<div class="workit-container">
+						<div class="workit-grid">
+							<div class="relative col-span-full pt-28">
+								<img
+									class="mx-auto size-70 md:mx-0 xl:size-119.25"
+									src="./assets/images/image-founder.webp"
+									alt=""
+								/>
+
+								<div
+									class="bg-workit-slate-900 relative -mt-12 space-y-8 p-8 max-md:text-center md:left-44 md:-mt-28 md:max-w-126 md:p-12 xl:left-97.5 xl:-mt-77.25 xl:max-w-182.5 xl:p-16"
+								>
+									<img
+										class="hidden md:absolute md:right-[37.35px] md:bottom-0 md:m-0 md:block md:translate-y-[calc(100%-66.77px)] md:-rotate-145 xl:right-[131.35px] xl:translate-y-[27.23px]"
+										src="./assets/images/bg-pattern-3.svg"
+										alt=""
+									/>
+
+									<h2 class="text-workit-white workit-typo-2">
+										Be the first to test
+									</h2>
+
+									<p class="text-workit-white workit-typo-4">
+										Hi, I'm Louis Graham, the founder of the company. Book a
+										demo call with me to become a beta tester for our app and
+										kickstart your company. Apply for access below and I’ll be
+										in touch to schedule a call.
+									</p>
+
+									<button class="workit-btn workit-btn--primary">
+										Apply for access
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer>
+				<div class="workit-container">
+					<div class="workit-grid">
+						<div
+							class="col-span-full flex flex-col items-center justify-center gap-14 py-20 xl:py-36"
+						>
+							<a href="#">
+								<img
+									class="workit-logo"
+									src="./assets/images/logo-dark.svg"
+									alt="workit logo"
+								/>
+							</a>
+
+							<ul class="flex items-center justify-center gap-7">
+								<li>
+									<a href="#">
+										<span class="workit-icon">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="20"
+												height="20"
+												viewBox="0 0 20 20"
+											>
+												<path
+													d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0Z"
+												/>
+											</svg>
+										</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<span class="workit-icon">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="20"
+												height="17"
+												viewBox="0 0 20 17"
+											>
+												<path
+													d="M20 2.172a8.192 8.192 0 0 1-2.357.646 4.11 4.11 0 0 0 1.805-2.27 8.22 8.22 0 0 1-2.606.996A4.096 4.096 0 0 0 13.847.248c-2.65 0-4.596 2.472-3.998 5.037A11.648 11.648 0 0 1 1.392 1a4.109 4.109 0 0 0 1.27 5.478 4.086 4.086 0 0 1-1.858-.513c-.045 1.9 1.318 3.679 3.291 4.075a4.113 4.113 0 0 1-1.853.07 4.106 4.106 0 0 0 3.833 2.849A8.25 8.25 0 0 1 0 14.658a11.616 11.616 0 0 0 6.29 1.843c7.618 0 11.923-6.434 11.663-12.205A8.354 8.354 0 0 0 20 2.172Z"
+												/>
+											</svg>
+										</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<span class="workit-icon">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="20"
+												height="20"
+												viewBox="0 0 20 20"
+											>
+												<path
+													d="M10 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.975 1.409 4.099 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.057 4.042-.124 2.687-1.387 3.975-4.1 4.099-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-2.717-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058ZM10 0C7.284 0 6.944.012 5.877.06 2.246.227.227 2.242.061 5.877.01 6.944 0 7.284 0 10s.012 3.057.06 4.123c.167 3.632 2.182 5.65 5.817 5.817 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c3.629-.167 5.652-2.182 5.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.777 2.249 17.76.228 14.124.06 13.057.01 12.716 0 10 0Zm0 4.865a5.135 5.135 0 1 0 0 10.27 5.135 5.135 0 0 0 0-10.27Zm0 8.468a3.333 3.333 0 1 1 0-6.666 3.333 3.333 0 0 1 0 6.666Zm5.338-9.87a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Z"
+												/>
+											</svg>
+										</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 	</body>
 </html>

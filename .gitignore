@@ -17,3 +17,6 @@
 
 # Avoid your project being littered with annoying node_modules files!
 node_modules/
+
+# Avoid accidental upload _note.txt file!
+_note.txt
