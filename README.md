@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://github.com/amjadham001/workit-landing-page.git)
-- Live Site URL: [Live Demo](https://amjadham001.github.io/workit-landing-page/)
+- Solution URL: [GitHub Repository](https://github.com/amjadham001/frontend-mentor-challenge-workit-landing-page.git)
+- Live Site URL: [Live Demo](https://amjadham001.github.io/frontend-mentor-challenge-workit-landing-page/)
 
 ## My process
 
